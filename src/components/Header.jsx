@@ -23,7 +23,13 @@ function Header() {
                                 <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">About</NavLink>
+                                <NavLink className="nav-link" to="/chat-example1">Chat Example 1</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/chat-example2">Chat Example 2</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/chat-example3">Chat Example 3</NavLink>
                             </li>
                             <li className="nav-item ms-2">
                                 <button

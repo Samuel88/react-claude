@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 import ChatExample1 from "./pages/ChatExample1";
 import ChatExample2 from "./pages/ChatExample2";
+import ChatExample3 from "./pages/ChatExample3";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="/chat-example1" element={<ChatExample1 />} />
             <Route path="/chat-example2" element={<ChatExample2 />} />
+            <Route path="/chat-example3" element={<ChatExample3 />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
