@@ -38,7 +38,7 @@ function ChatExample3() {
         sendRequest(message)
             .then(aiMessage => {
                 const aiMsg = new AIMessage(aiMessage.content);
-                setHistory([...history, aiMsg]);              
+                setHistory(prev => [...prev, aiMsg]);
             })
             .catch(error => {
                 console.error("Errore nella richiesta:", error);
