@@ -1,4 +1,5 @@
 import * as z from "zod";
+import { tool } from "langchain/tools";
 
 const rollDice = tool(
     ({ sides }) => {

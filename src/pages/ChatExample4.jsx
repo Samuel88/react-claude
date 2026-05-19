@@ -1,22 +1,10 @@
-import { createAgent, HumanMessage, tool } from "langchain";
-import { ChatAnthropic } from "@langchain/anthropic";
-import rollDice from "../tools/rollDice";
+import { HumanMessage } from "langchain";
+import anthropicAgent from "../agents/AnthropicAgents";
 
 function ChatExample4() {
-    const CLAUDE_API_KEY = import.meta.env.VITE_API_KEY;
-
-    const model = new ChatAnthropic({
-        model: 'claude-sonnet-4-6',
-        apiKey: CLAUDE_API_KEY,
-    });
-
-    const agent = createAgent({
-        model,
-        tools: [rollDice],
-    });
-
+    
     const handleRollDice = () => {
-        agent.invoke({
+        anthropicAgent.invoke({
             messages: [
                 new HumanMessage("Voglio tirare un dado a 6 facce.")
             ]

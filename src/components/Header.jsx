@@ -31,6 +31,9 @@ function Header() {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/chat-example3">Chat Example 3</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/chat-example4">Chat Example 4</NavLink>
+                            </li>
                             <li className="nav-item ms-2">
                                 <button
                                     className="btn btn-outline-secondary btn-sm"
